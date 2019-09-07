@@ -28,6 +28,6 @@ for i in offer_list:
 # print(*links)
 with open('2.md','w',encoding= code) as f:
     for i in range(len(jobs)):
-        f.write(f'[{jobs[i]}]({links[i]})\n')
+        f.write(f'[{jobs[i]}]({links[i]})  ')
 # jobs_link = dict(zip(jobs, links))
 # print(jobs_link)
