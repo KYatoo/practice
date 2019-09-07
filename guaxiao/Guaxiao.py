@@ -20,18 +20,18 @@ for i in range(0, 10*15, 15):
     title_info = re.findall(rf'<a href="https://movie.douban.com/subject/.*?class="title-text">{name}.*?\({age}\)</a>',dirver.page_source)
     # title_info = re.findall(r'<a href[\s\S]*?银河护卫队[\s\S]*?2014[\s\S]*?</a>', dirver.page_source, re.DOTALL)
     # print(len(title_info))
-    # if len(title_info) == 0 :
-    #     continue
+    if len(title_info) == 0 :
+        continue
     for i in range(len(title_info)):
         print(title_info[i])
-    # minlen = 100000
-    # for i in title_info:
-    #     if len(i)<minlen:
-    #         minlen = len(i)
-    #         tag = i
+    minlen = 100000
+    for i in title_info:
+        if len(i)<minlen:
+            minlen = len(i)
+            tag = i
     # print(tag)
-    # movie_id = re.findall(r"subject_id:'(.*?)'",tag)
+    movie_id = re.findall(r"subject_id:'(.*?)'",tag)
     # print(movie_id)
-    # movie_url = 'https://movie.douban.com/subject/' + movie_id[0]
-    # print(movie_url)
+    movie_url = 'https://movie.douban.com/subject/' + movie_id[0]
+    print(movie_url)
     break
