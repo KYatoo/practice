@@ -7,10 +7,13 @@ import re
 url = 'https://wall.alphacoders.com/search.php?search=d.va'
 headers ={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36'}
 resp = requests.get(url,headers = headers).text
+with open('2.html','w',encoding= 'utf-8') as f:
+    f.write(resp)
 
 urls = re.findall(r'<div class=\'boxgrid\'>[\s\S]*?src="(https://.*?)"[\s\S]*?</div>', resp, re.DOTALL)
 for url in urls:
     print(url)
+
 
 
 # xpa = etree.HTML(resp)

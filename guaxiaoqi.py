@@ -5,6 +5,8 @@ url = 'https://movie.douban.com/j/search_subjects?type=tv&tag=%E7%83%AD%E9%97%A8
 headers = {"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36"}
 resp = requests.get(url,headers=headers)
 sd=json.loads(resp.text)
+print(*resp)
+print(type(sd))
 # print(sd)
 # print(sd["subjects"][0]["rate"])
 while True:
