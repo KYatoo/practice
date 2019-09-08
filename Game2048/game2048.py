@@ -127,7 +127,7 @@ while True:
         if action =='q':
             overgame = True
             break
-        elif action == 'w' or 'a' or 'a' or 'd':
+        elif action in 'wsad':
             maxarea = moveele(maxarea, action)
             break
         else:
