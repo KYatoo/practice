@@ -112,6 +112,18 @@ def maxelem2(Matrix):
         maxnum.append(list[0] if list[0]>maxElem(list[1:]) else maxElem(list[1:]))
     return maxElem(maxnum)
 
+#列表最小元素
+def minElem(list):
+    if len(list)==1:
+        return list[0]
+    return list[0] if list[0]<minElem(list[1:]) else minElem(list[1:])
+#矩阵最小元素
+def minelem2(Matrix):
+    minnum =[]
+    for list in Matrix:
+        minnum.append(list[0] if list[0]<minElem(list[1:]) else minElem(list[1:]))
+    return minElem(minnum)
+
 size = 4
 maxarea = numpy.zeros([size, size])
 while True:
@@ -122,6 +134,9 @@ while True:
             maxarea[seat[0]][seat[1]] = 2
             break
     printarea(maxarea)
+    if minelem2(maxarea)>0:
+        print("游戏失败，再接再厉")
+        break
     while True:
         action = input("请输入你的操作（wsad）(按q退出游戏）：")
         if action =='q':
