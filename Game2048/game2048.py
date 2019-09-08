@@ -132,5 +132,9 @@ while True:
             break
         else:
             print("输入无效，请重新输入")
-    if overgame == True or maxelem2(maxarea)>=2048:
+    if overgame == True :
+        break
+    # print('%d'% maxelem2(maxarea))
+    if maxelem2(maxarea)>=2048:
+        print("游戏结束，恭喜通关")
         break
