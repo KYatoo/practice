@@ -19,8 +19,11 @@ jobs = []
 links = []
 x = []
 for i in offer_list:
-    temp1 = re.findall(r'<a href="(https://.*?)" target="_blank"><span style="color: #008000;">.*?</span>.*?</a>',i)
-    temp2 = re.findall(r'<a href="https://.*?" target="_blank"><span style="color: #008000;">.*?</span>(.*?)</a>',i)
+    temp1 = re.findall(r'<a href="(http.*?)" target="_blank"><span style="color: #008000;">.*?</span>.*?</a>',i)
+    temp2 = re.findall(r'<a href="http.*?" target="_blank"><span style="color: #008000;">.*?</span>(.*?)</a>',i)
+    if temp1 == [] and temp2 == []:
+        temp1 = re.findall(r'<a href="(http.*?)" target=.*?title=".*?" /></a>',i)
+        temp2 = re.findall(r'<a href="http.*?" target=.*?title="(.*?)" /></a>', i)
     if temp1 != [] and temp2 != []:
         links.append(temp1[0])
         jobs.append(temp2[0])
