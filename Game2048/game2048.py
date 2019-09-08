@@ -16,7 +16,7 @@ def printarea(maxarea):
     size = 4
     for i in range(size):
         for j in range(size):
-            print('%d'% maxarea[i][j],end='   ')
+            print('%d'% maxarea[i][j],end='     ')
         print('\n')
 #从前往后去重
 def quchong1(list_list):
@@ -41,7 +41,7 @@ def quchong2(list_list):
             k = k -2
         else:
             k = k -1
-        if k <=1:
+        if k <=0:
             break
     return list_list
 #移位，去0
@@ -134,9 +134,6 @@ while True:
             maxarea[seat[0]][seat[1]] = 2
             break
     printarea(maxarea)
-    if minelem2(maxarea)>0:
-        print("游戏失败，再接再厉")
-        break
     while True:
         action = input("请输入你的操作（wsad）(按q退出游戏）：")
         if action =='q':
@@ -147,6 +144,9 @@ while True:
             break
         else:
             print("输入无效，请重新输入")
+    if minelem2(maxarea)>0:
+        print("游戏失败，再接再厉")
+        break
     if overgame == True :
         break
     # print('%d'% maxelem2(maxarea))
