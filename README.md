@@ -34,3 +34,11 @@ windows + python
 windows + python
 2. **操作流程**  
 运行job_info.py，源文件夹会生成一个jobs_link.md的文档，内含该招聘网站公司点击跳转招聘宣传链接  
+
+### 5. 游戏2048
+**字符串界面操作的游戏2048**  
+文件链接：[https://github.com/KYatoo/practice/blob/master/Game2048/game2048.py](https://github.com/KYatoo/practice/blob/master/Game2048/game2048.py)  
+1. **运行环境**  
+windows + python
+2. **操作流程**  
+运行后游戏开始，通过wsad来控制上下左右，当输入其他字符会提示“输入无效，请重新输入”，输入q结束游戏。当游戏算到2048后，提示“恭喜通关”游戏结束。  
