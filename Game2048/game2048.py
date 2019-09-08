@@ -16,7 +16,7 @@ def printarea(maxarea):
     size = 4
     for i in range(size):
         for j in range(size):
-            print('%d'% maxarea[i][j],end=' ')
+            print('%d'% maxarea[i][j],end='   ')
         print('\n')
 #从前往后去重
 def quchong1(list_list):
