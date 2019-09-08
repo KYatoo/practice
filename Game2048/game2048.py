@@ -65,7 +65,7 @@ def moveele(maxarea,action:str):
             colu = remove0(colu)
             colu += [0 for k in range(size - len(colu))]
             colu = quchong1(colu)
-            #末尾补齐0
+            colu = remove0(colu)
             colu += [ 0 for k in range(size-len(colu))]
             for i in range(size):
                 maxarea[i][j] = colu[i]
@@ -75,7 +75,7 @@ def moveele(maxarea,action:str):
             colu = remove0(colu)
             colu = [0 for k in range(size - len(colu))] +colu
             colu = quchong2(colu)
-            #末尾补齐0
+            colu = remove0(colu)
             colu = [0 for k in range(size - len(colu))] +colu
             for i in range(size):
                 maxarea[i][j] = colu[i]
@@ -85,7 +85,7 @@ def moveele(maxarea,action:str):
             colu = remove0(colu)
             colu += [0 for k in range(size - len(colu))]
             colu = quchong1(colu)
-            # 末尾补齐0
+            colu = remove0(colu)
             colu += [0 for k in range(size - len(colu))]
             for j in range(size):
                 maxarea[i][j] = colu[j]
@@ -95,7 +95,7 @@ def moveele(maxarea,action:str):
             colu = remove0(colu)
             colu = [0 for k in range(size - len(colu))] +colu
             colu = quchong2(colu)
-            # 末尾补齐0
+            colu = remove0(colu)
             colu = [0 for k in range(size - len(colu))] +colu
             for j in range(size):
                 maxarea[i][j] = colu[j]
@@ -139,7 +139,7 @@ while True:
         if action =='q':
             overgame = True
             break
-        elif action in 'wsad':
+        elif action in 'wsad' and len(action) == 1:
             maxarea = moveele(maxarea, action)
             break
         else:
