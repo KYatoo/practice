@@ -17,3 +17,10 @@ def getcode():
     # print(station2cod['北京'])
     # print(cod2station['BJP'])
     return [station2cod,cod2station]
+
+if __name__ == "__main__":
+    [station2cod, cod2station] = getcode()
+    print(station2cod['禹城'])
+    print(station2cod['禹城东'])
+    print(station2cod['德州'])
+    print(station2cod['德州东'])
