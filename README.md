@@ -53,6 +53,7 @@ windows + python
 
 ### 7. 查询12306余票信息
 **输入相关信息（出发地、目的地、出发时间、成人票/学生票）获取当前余票信息[详情请点击](https://github.com/KYatoo/practice/blob/master/Getticket/README.md)**  
+文件连接：[https://github.com/KYatoo/practice/tree/master/Getticket](https://github.com/KYatoo/practice/tree/master/Getticket)
 1. **运行环境**  
 windows + python + module（PrettyTable）
 2. **操作流程**  
