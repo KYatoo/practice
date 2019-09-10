@@ -60,4 +60,3 @@ windows + python + module（PrettyTable）
 输入输入相关信息（出发地、目的地、出发时间、成人票/学生票）获取当前余票信息，余票信息会以表格的形式展示，方便直观。同时在main.py所在目录生成'ticket.md'文件，内容同样为表格，内容更加详细。
 3. **效果图**
 [![nN3K4s.png](https://s2.ax1x.com/2019/09/10/nN3K4s.png)](https://imgchr.com/i/nN3K4s)
-[![nN3uNj.png](https://s2.ax1x.com/2019/09/10/nN3uNj.png)](https://imgchr.com/i/nN3uNj)
