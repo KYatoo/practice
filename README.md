@@ -42,3 +42,21 @@ windows + python
 windows + python
 2. **操作流程**  
 运行后游戏开始，通过wsad来控制上下左右，当输入其他字符会提示“输入无效，请重新输入”，输入q结束游戏。当游戏算到2048后，提示“恭喜通关”游戏结束。  
+
+### 6. 炸网站！
+**重复向[paste.ubuntu.com](paste.ubuntu.com)网站发送随机字符串并返回链接**  
+文件链接：[https://github.com/KYatoo/practice/blob/master/boomweb/boom.py](https://github.com/KYatoo/practice/blob/master/boomweb/boom.py)  
+1. **运行环境**  
+windows + python
+2. **操作流程**  
+运行程序，自动生成两个随机字符串，并分别以sender和massage发送至paste.ubuntu.com，并返回查看链接。循环往复。
+
+### 7. 查询12306余票信息
+**输入相关信息（出发地、目的地、出发时间、成人票/学生票）获取当前余票信息[详情请点击](https://github.com/KYatoo/practice/blob/master/Getticket/README.md)**  
+1. **运行环境**  
+windows + python + module（PrettyTable）
+2. **操作流程**  
+输入输入相关信息（出发地、目的地、出发时间、成人票/学生票）获取当前余票信息，余票信息会以表格的形式展示，方便直观。同时在main.py所在目录生成'ticket.md'文件，内容同样为表格，内容更加详细。
+3. **效果图**
+[![nN3K4s.png](https://s2.ax1x.com/2019/09/10/nN3K4s.png)](https://imgchr.com/i/nN3K4s)
+[![nN3uNj.png](https://s2.ax1x.com/2019/09/10/nN3uNj.png)](https://imgchr.com/i/nN3uNj)
