@@ -1,12 +1,12 @@
 import station_info
 import re
 
-#验证输入信息生成查询url
+#验证输入信息生成查询url，并返回url以及要查询的信息
 def geturl():
     [station2cod,cod2station] = station_info.getcode()
     while True:
         stafrom = input("请输入出发地：")
-        # if station2cod.has_key(stafrom):
+        # if station2cod.has_key(stafrom): #has_key 在python3不可用
         if stafrom in station2cod:
             stafrom_code = station2cod[stafrom]
             # print(stafrom_code)
@@ -31,13 +31,14 @@ def geturl():
     while True:
         stuyon  = input("是否查询学生票（Y/N)")
         if stuyon == 'Y':
-            purpose_codes = '0X00'
+            purpose_codes = '0X00'#学生
             break
         elif stuyon == 'N':
-            purpose_codes = 'ADULT'
+            purpose_codes = 'ADULT' #成人
             break
         else:
             print("输入无效，请输入'Y'表示YES，'N'表示NO")
+    #无法实现该功能，取消
     # while True:
     #     hswayyon= input("是否只查询高铁动车票（Y/N）")
     #     if hswayyon == 'Y' or hswayyon == 'N':
