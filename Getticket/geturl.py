@@ -47,7 +47,7 @@ def geturl():
     #         print("输入无效，请输入'Y'表示YES，'N'表示NO")
     # url = 'https://kyfw.12306.cn/otn/leftTicket/init?linktypeid=dc&fs='+ stafrom + ','+ stafrom_code + '&ts=' + stato +',' +stato_code +'&date='+date+'&flag='+stuyon+','+hswayyon+',Y'
     # print(url)
-    url = 'https://kyfw.12306.cn/otn/leftTicket/queryT?leftTicketDTO.train_date='+ date +'&leftTicketDTO.from_station=' +stafrom_code +'&leftTicketDTO.to_station='+stato_code+'&purpose_codes='+purpose_codes
+    url = 'https://kyfw.12306.cn/otn/leftTicket/queryA?leftTicketDTO.train_date='+ date +'&leftTicketDTO.from_station=' +stafrom_code +'&leftTicketDTO.to_station='+stato_code+'&purpose_codes='+purpose_codes
     return [url,date,stafrom_code,stato_code,purpose_codes]
 
 if __name__ == "__main__":
