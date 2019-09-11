@@ -20,15 +20,15 @@ def get_chapter(chapter_titil,url):
             return [sucyon,text_body]
         except Exception as e:
             pass
-    if text_body == '':
+    if i == 2:
         print(chapter_titil+"下载失败")
         sucyon = False
         return [sucyon,chapter_titil+"下载失败"]
 
 if __name__ == "__main__":
     # url = 'https://www.biqugex.com/book_20765/9076607.html'
-    url ='https://www.biqugex.com/book_79086/28364804.html'
-    text_body=get_chapter('第80章',url)
+    url ='https://www.biqugex.com/book_102622/505354972.html'
+    [x,text_body]=get_chapter('第80章',url)
     with open('chapter_test.txt','w',encoding='utf-8') as g:
         g.write(text_body)
     print(text_body)
