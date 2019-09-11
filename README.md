@@ -60,3 +60,19 @@ windows + python + module（PrettyTable）
 输入输入相关信息（出发地、目的地、出发时间、成人票/学生票）获取当前余票信息，余票信息会以表格的形式展示，方便直观。同时在main.py所在目录生成'ticket.md'文件，内容同样为表格，内容更加详细。
 3. **效果图**
 [![nN3K4s.png](https://s2.ax1x.com/2019/09/10/nN3K4s.png)](https://imgchr.com/i/nN3K4s)
+
+### 8. 小说下载
+**输入小说名和小说在笔趣阁的数字代码，自动下载全部章节，并存成markdown文档**  
+项目连接：[https://github.com/KYatoo/practice/tree/master/DownloadEBook2.0](https://github.com/KYatoo/practice/tree/master/DownloadEBook2.0)  
+1. **运行环境**  
+windows + python
+2. **操作流程**  
+输入小说名和小说在笔趣阁的数字代码，自动下载全部章节，并存成markdown文档。书名、章节名、内容分别保存为一级标题、三级标题、正文。markdown文档自动生成目录十分方便。 
+3. **效果（ [点我阅读](https://github.com/KYatoo/practice/blob/master/DownloadEBook2.0/%E6%B5%B7%E8%B4%BC%E4%B9%8B%E7%86%94%E5%B2%A9%E5%B7%A8%E5%85%BD.md) ）**  
+![IRRA0JUVBK50OKPQX5.png](https://www.z4a.net/images/2019/09/11/IRRA0JUVBK50OKPQX5.png)  
+![f62be28504aa0a4c0baff1f486335490.png](https://www.z4a.net/images/2019/09/11/f62be28504aa0a4c0baff1f486335490.png)  
+4. **说明**
+在本project中还保留了上一版的小说下载器。新版本比起旧版本，容错率显著提升。极大提高了因网络或其他原因引起的不稳定导致下载失败的情况。  
+- 分章节下载最后合并  
+- 下载某章节失败后再进行两次尝试  
+- 一个章节的失败不影响其他章节的下载阅读  
