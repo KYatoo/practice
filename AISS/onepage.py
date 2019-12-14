@@ -35,5 +35,5 @@ def DloadAtlas(url,name = "图集"):
 
 if __name__ == "__main__":
     # GetPicUrl('https://www.meituri.com/a/13670/')
-    DloadAtlas('https://www.meituri.com/a/13670/')
+    DloadAtlas('https://www.meituri.com/a/13658/')
 

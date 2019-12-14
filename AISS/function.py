@@ -33,6 +33,7 @@ def DloadPics(urllist,path):
 
 #在当前文件夹下创建一个文件夹，并获取起完整路径名
 def mkdir(name):
+    name = name.replace('/','')
     path_pre = os.getcwd() #获取当前路径
     path = path_pre + './%s' % name
     if not os.path.exists(path):
@@ -42,7 +43,7 @@ def mkdir(name):
 
 if __name__ == "__main__":
     #只能爬取该网站（https://www.enterdesk.com/）的图集
-    url = 'https://mm.enterdesk.com/bizhi/44170.html' #这里需要修改
+    url = 'https://www.meituri.com/a/13658/' #这里需要修改
     #url = input("请输入图集url(请包含https):")
     name = input("请输入图集名：")
     res = UrlInit(url)
