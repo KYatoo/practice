@@ -2,14 +2,15 @@ from function import *
 from onepage import *
 from AllAtlas import *
 
-url = "https://www.meituri.com/x/37/"
+url = input("请输入链接：")
+# url = "https://www.meituri.com/x/37/"
 pagelist = GetIndexPage(url)
 altasurl = []
 altasname = []
 for page in pagelist:
     [altasurl1,altasname2] = GetAltasInfo(page)
     # print(altasurl1)
-    # print(altasname2)
+    # print(altasname2)https://www.meituri.com/x/81/
     altasurl = altasurl + altasurl1
     altasname = altasname + altasname2
 # print(len(altasurl))
