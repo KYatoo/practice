@@ -43,7 +43,8 @@ def DloadAtlas(url,name = "图集"):
         picurllist = GetPicUrl(pagelist[page])
         for pic in picurllist:
             DloadPic(pic,path,str(i))
-            i = i + 1            print("第%d张图下载完成" %i)
+            i = i + 1
+            print("第%d张图下载完成" %i)
 
 if __name__ == "__main__":
     # GetPicUrl('https://www.meituri.com/a/13670/')
