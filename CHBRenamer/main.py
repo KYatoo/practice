@@ -70,4 +70,11 @@ def NormativeDir(path):
             NormativeDir(newpath)
 
 # NormativeDir('D:\\user\\Downloads\\豆瓣音乐top250')
-NormativeDir('D:\\user\\Documents\\音乐MP3')
+# NormativeDir('D:\\user\\Documents\\音乐MP3')
+if __name__ == "__main__":
+    while True:
+        rootdir = input("请输入路径（按Q退出）：")
+        if rootdir.upper() == 'Q':
+            break
+        NormativeDir(rootdir)
+        print(rootdir + "操作完成")
