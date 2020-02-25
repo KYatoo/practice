@@ -7,13 +7,13 @@ def CutPic(picname,level = 3,sourcepath = ".//SourcePic",targetpath = ".//Pic"):
     # print(os.listdir(sourcepath))
     # print(os.listdir(targetpath))
     filelist = os.listdir(sourcepath)
-    print(filelist)
+    # print(filelist)
     if picname in filelist:
         picpath = sourcepath + "//" + picname
         [mission,filefomat] = SplitFomat(picpath)
         #新建文件夹
         targetpath = MkNewDir(NamePicPath(mission,level),targetpath)
-        print(targetpath)
+        # print(targetpath)
         im = Image.open(picpath)
         imgsize = im.size
         ( asize,bsize ) = imgsize
@@ -33,7 +33,7 @@ def CutPic(picname,level = 3,sourcepath = ".//SourcePic",targetpath = ".//Pic"):
             (a,b) = (startpointa+(coordinateb-1)*targetsize,startpointb+(coordinatea-1)*targetsize)
             # print((a,b))
             tempimg = im.crop((a,b,a+targetsize-1,b+targetsize-1))
-            print("%s//%s.%s" %(targetpath,num,filefomat))
+            # print("%s//%s.%s" %(targetpath,num,filefomat))
             tempimg.save("%s//%s.%s" %(targetpath,num,filefomat))
         return [mission,level]
 

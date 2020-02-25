@@ -1,5 +1,6 @@
 from JsonProject import *
 from CutPic import *
+from ClearCache import ClearCache
 import json,os
 
 def CheckMissionList(missionlistPath = ".//missionlist.json"):
@@ -29,7 +30,7 @@ def CutPicWtJson(picname,sourcepath = ".//SourcePic",targetpath = ".//Pic",level
         return True
     return False
 
-def CheckNewMission(sourcepath = ".//SourcePic",missionlistpath = ".//missionlist.json"):
+def CreatNewMission(sourcepath = ".//SourcePic",missionlistpath = ".//missionlist.json"):
     sourcepiclist = os.listdir(sourcepath)
     if not os.path.exists(missionlistpath):
         CrtMissionList()
@@ -37,21 +38,22 @@ def CheckNewMission(sourcepath = ".//SourcePic",missionlistpath = ".//missionlis
         prmissionlist = json.load(e)
         e.close()
     for sourcepic in sourcepiclist:
-        print(sourcepic)
+        # print(sourcepic)
         picname = sourcepic.split(".")[0]
         for level in [3,4,5]:
             if prmissionlist["%s" %level] == []:
-                print(level)
-                print(prmissionlist["%s" %level])
-                print(picname)
+                # print(level)
+                # print(prmissionlist["%s" %level])
+                # print(picname)
                 CutPicWtJson(sourcepic, sourcepath = sourcepath, level=level, jsonpath=missionlistpath)
             else:
                 for mission in prmissionlist["%s" %level]:
-                    print(mission["mission"])
+                    # print(mission["mission"])
                     if not mission["mission"] == picname:
                         # CutPic(picname,level=level)
                         CutPicWtJson(sourcepic,sourcepath,level=level,jsonpath=missionlistpath)
 
 if __name__ == "__main__":
     # CheckMissionList()
-    CheckNewMission()
+    ClearCache()
+    CreatNewMission()

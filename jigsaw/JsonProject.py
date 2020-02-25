@@ -39,7 +39,7 @@ def initmissionjson():
 def CrtMissionList(jsonpath="missionlist.json"):
     if not os.path.exists(jsonpath):
         content = initmissionjson()
-        print(type(content))
+        # print(type(content))
         with open(jsonpath, 'w') as missionlist:
             json.dump(content, missionlist)
             missionlist.close()
@@ -51,7 +51,7 @@ def WtMissionList(missioninfo,jsonpath=".//missionlist.json", level=3):
         e.close()
     with open(jsonpath, 'w') as e:
         mission["%s" %level].append(missioninfo)
-        print(mission)
+        # print(mission)
         # # print(text)
         json.dump(mission, e)
 
