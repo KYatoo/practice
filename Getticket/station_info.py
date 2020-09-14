@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
 import requests,re
 def getcode():
     url = 'https://kyfw.12306.cn/otn/resources/js/framework/station_name.js?station_version=1.9006'
