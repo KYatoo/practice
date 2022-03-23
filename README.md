@@ -76,3 +76,21 @@ windows + python
 - 分章节下载最后合并  
 - 下载某章节失败后再进行两次尝试  
 - 一个章节的失败不影响其他章节的下载阅读  
+
+### 爬图集
+**输入“妹子图”图集连接下载图集**
+爬涩图什么的，宅男最喜欢了。
+[https://github.com/KYatoo/practice/tree/master/AISS](https://github.com/KYatoo/practice/tree/master/AISS)
+
+### 文件重命名
+**整理音乐文件夹内容，批量重命名专辑图片等文件**
+[https://github.com/KYatoo/practice/tree/master/CHBRenamer](https://github.com/KYatoo/practice/tree/master/CHBRenamer)
+
+### 批量修改文件夹图标
+**批量修改文件夹图标，使文件夹以自定义图片显示，用以整理音乐文件夹，使文件夹显示为专辑封面**
+[https://github.com/KYatoo/practice/tree/master/FolderIco](https://github.com/KYatoo/practice/tree/master/FolderIco)
+
+### 批量获取守望先锋媒体
+**国服的宣传片和小说漫画不全，索性去台服全下载下来好了**
+[https://github.com/KYatoo/practice/tree/master/OWmedia](https://github.com/KYatoo/practice/tree/master/OWmedia)
+
